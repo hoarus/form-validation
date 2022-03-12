@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <form novalidate>
+    <h1>Insert Details</h1>
+    <p>
+      <label for="mail">
+        <span>Email:</span>
+        <input type="email" id="mail" name="mail" required minlength="8">
+        <span class="error" aria-live="polite"></span>
+      </label>
+    </p>
+    <p>
+      <label for="country">
+        <span>Country:</span>
+        <input type="text" id="country" name="country" required minlength="4" pattern="[A-Za-z]+">
+        <span class="error" aria-live="polite"></span>
+      </label>
+    </p>
+    <p>
+      <label for="zip-code">
+        <span>Zip code:</span>
+        <input type="text" id="zip-code" name="zip-code" required minlength="3" maxlength="10" pattern="[0-9]+">
+        <span class=" error" aria-live="polite"></span>
+      </label>
+    </p>
+    <p>
+      <label for="password">
+        <span>Password:</span>
+        <input type="password" id="password" name="password" required minlength="6">
+        <span class="error" aria-live="polite"></span>
+      </label>
+    </p>
+    <p>
+      <label for="conf-password">
+        <span>Password Confirmation:</span>
+        <input type="password" id="conf-password" name="conf-password" required minlength="6">
+        <span class="error" aria-live="polite"></span>
+      </label>
+    </p>
+    <button>Submit</button>
+  </form>
+
+
+</body>
+
+<script src="validation.js"></script>
+
+</html>
